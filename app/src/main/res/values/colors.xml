@@ -9,4 +9,7 @@
     <color name="hint_input_register">#5e6266</color>
     <color name="light_dark">#3b3b3b</color>
     <color name="bg_btn_register">#dcdcdc</color>
+    <color name="colorBackground">#00BFFF</color>
+    <color name="colorText">#FFFFFF	</color>
+    <color name="colorButton">#DCDCDC</color>
 </resources>

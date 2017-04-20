@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">IT SHARING</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Not a member? Sign up now!</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
     <string name="hint_name">Fullname</string>
