@@ -1,7 +1,82 @@
 <resources>
-    <string name="app_name">ITAPP</string>
+    <string name="app_name">IT SHARING</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="register">Not a member? Sign up now!</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="pick_date">Date</string>
+    <string name="hint_birthday">Birthday</string>
+    <string-array name="jobs">
+        <item>--Select Your Job--</item>
+        <item>Graphic Designer</item>
+        <item>IT Network and Administrator</item>
+        <item>Developer</item>
+        <item>Tester</item>
+        <item>Human Resource</item>
+    </string-array>
+    <string-array name="cities">
+        <item>--Select Your City--</item>
+        <item>An Giang</item>
+        <item>Bà Rịa – Vũng Tàu</item>
+        <item>Bạc Liêu</item>
+        <item>Bắc Giang</item>
+        <item>Bắc Ninh</item>
+        <item>Bến Tre</item>
+        <item>Bình Thuận</item>
+        <item>Bình Định</item>
+        <item>Cao Bằng</item>
+        <item>Cần Thơ</item>
+        <item>Cà Mau</item>
+        <item>Đồng Nai</item>
+        <item>ĐắkLắk</item>
+        <item>Đồng Tháp</item>
+        <item>Điên Biên</item>
+        <item>Đồng Tháp</item>
+        <item>Đà Nẵng</item>
+        <item>Gia Lai</item>
+        <item>Hà Tĩnh</item>
+        <item>Hải Dương</item>
+        <item>Hòa Bình</item>
+        <item>Hưng Yên</item>
+        <item>Hà Nam</item>
+        <item>Hà Nội</item>
+        <item>Hồ Chí Minh</item>
+        <item>Hải Phòng</item>
+        <item>KonTum</item>
+        <item>Khánh Hòa</item>
+        <item>Kiên Giang</item>
+        <item>Lâm Đồng</item>
+        <item>Lạng Sơn</item>
+        <item>Lào Cai</item>
+        <item>Nghệ An</item>
+        <item>Nam Định</item>
+        <item>Ninh Bình</item>
+        <item>Ninh Thuận</item>
+        <item>Phú Thọ</item>
+        <item>Phú Yên</item>
+        <item>Quảng Ninh</item>
+        <item>Quảng Trị</item>
+        <item>Quảng Bình</item>
+        <item>Quảng Nam</item>
+        <item>Quảng Ngãi</item>
+        <item>Sóc Trăng</item>
+        <item>Sơn La</item>
+        <item>Tuyên Quang</item>
+        <item>Thừa Thiên Huế</item>
+        <item>Tiền Giang</item>
+        <item>Thái Bình</item>
+        <item>Thái Nguyên</item>
+        <item>Thanh Hóa</item>
+        <item>Trà Vinh</item>
+        <item>Vĩnh Phúc</item>
+        <item>Vĩnh Long</item>
+        <item>Yên Bái</item>
+    </string-array>
 </resources>
