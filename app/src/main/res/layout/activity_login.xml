@@ -37,7 +37,8 @@
             android:background="@color/colorText"
             android:hint="@string/password"
             android:inputType="textPassword"
-            android:padding="10dp"/>
+            android:padding="10dp"
+             />
 
         <!-- Login Button -->
 
@@ -50,6 +51,7 @@
             android:background="@color/colorButton"
             android:text="@string/login"
             android:elevation="0dp"/>
+           />
 
         <!-- Link to Login Screen -->
 
