@@ -8,7 +8,7 @@ import java.io.ByteArrayOutputStream;
 public class Common {
 
     //constant
-    public static final String API_SERVER_IP = "http://192.168.103.129:8080/IT-SHARING/";
+    public static final String API_SERVER_IP = "http://192.168.103.120:8080/IT-SHARING/";
 //    public static final String SERVER_DEPARTMENT_IMAGE_RESOURCE = "http://192.168.103.138:8080/IT-SHARING/resources/deparment-images/";
 
 

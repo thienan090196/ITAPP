@@ -1,24 +1,26 @@
 package com.example.cuongtran.itapp.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by an.truong on 12/04/2017.
  */
 
-public class Profile {
+public class Profile implements Serializable{
     private int idProfile;  // id nay tang tu dong
     private int idUser;
     private String name;
-    private Date dob;
+    private String dob;
     private int gender;
     private String phone;
     private String job;
     private String city;
-    //private String avatar;
+    private String avatar;
 
     public Profile(){}
-    public Profile(int idUser, String name, Date dob, int gender, String phone, String job, String city){
+
+    public Profile(int idUser, String name, String dob, int gender, String phone, String job, String city, String avatar){
         this.idUser = idUser;
         this.name = name;
         this.dob = dob;
@@ -26,6 +28,7 @@ public class Profile {
         this.phone = phone;
         this.job = job;
         this.city = city;
+        this.avatar = avatar;
     }
 
     public int getIdProfile() {
@@ -60,11 +63,11 @@ public class Profile {
         this.gender = gender;
     }
 
-    public Date getDob() {
+    public String getDob() {
         return dob;
     }
 
-    public void setDob(Date dob) {
+    public void setDob(String dob) {
         this.dob = dob;
     }
 
@@ -90,5 +93,13 @@ public class Profile {
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
     }
 }

@@ -31,6 +31,8 @@ public class PostAdapter extends ArrayAdapter<Post> {
         ImageView imageView;
         TextView txtName;
         TextView txtContent;
+        ImageView imageComment;
+        TextView txtContentComment;
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -44,6 +46,8 @@ public class PostAdapter extends ArrayAdapter<Post> {
             holder.txtName = (TextView) convertView.findViewById(R.id.title);
             holder.txtContent = (TextView) convertView.findViewById(R.id.message);
             holder.imageView = (ImageView) convertView.findViewById(R.id.icon);
+            holder.imageView = (ImageView) convertView.findViewById(R.id.imageComment);
+            holder.txtContentComment = (TextView) convertView.findViewById(R.id.contentComment);
             convertView.setTag(holder);
         } else
             holder = (ViewHolder) convertView.getTag();
@@ -51,6 +55,7 @@ public class PostAdapter extends ArrayAdapter<Post> {
         holder.txtName.setText(rowItem.getUserName());
         holder.txtContent.setText(rowItem.getContent());
         holder.imageView.setImageResource(rowItem.getImageId());
+        //holder.imageComment.setImageResource(rowItem.getComments().get);
 
         return convertView;
     }

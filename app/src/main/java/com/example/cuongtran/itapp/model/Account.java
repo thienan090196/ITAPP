@@ -1,15 +1,20 @@
 package com.example.cuongtran.itapp.model;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
-public class Account {
+public class Account implements Serializable{
     private int idUser ;
     private String email;
     private String password;
     private int isActive;
     private String verifyCodeEmail;
-    private Date dateCreate;
-    private Date dateUpdate;
+    private String dateCreate;
+    private String dateUpdate;
+    private Profile profile;
+    private List<Post> posts;
 
     public Account(){}
     public Account(String email, String password){
@@ -53,20 +58,43 @@ public class Account {
         return verifyCodeEmail;
     }
 
-    public Date getDateCreate() {
+    public String getDateCreate() {
         return dateCreate;
     }
 
-    public void setDateCreate(Date dateCreate) {
+    public void setDateCreate(String dateCreate) {
         this.dateCreate = dateCreate;
     }
 
-    public void setDateUpdate(Date dateUpdate) {
+    public void setDateUpdate(String dateUpdate) {
         this.dateUpdate = dateUpdate;
     }
 
-    public Date getDateUpdate() {
+    public String getDateUpdate() {
         return dateUpdate;
     }
 
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public List<Post> getPosts() {
+        if(posts == null){
+            return new ArrayList<Post>();
+        }
+        return posts;
+    }
+
+    public void setPosts(List<Post> posts) {
+        this.posts = posts;
+    }
+
+    public Profile getProfile() {
+        return profile;
+    }
+
+    public void setProfile(Profile profile) {
+        this.profile = profile;
+    }
 }

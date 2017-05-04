@@ -23,6 +23,7 @@ public class Post implements Serializable{
     private int imageId;
     private String userName;
     private String content;
+    private List<Comment> comments;
 
     public Post() {
     }
@@ -83,5 +84,13 @@ public class Post implements Serializable{
 
     public void setDate_create(String date_create) {
         this.date_create = date_create;
+    }
+
+    public List<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
     }
 }
