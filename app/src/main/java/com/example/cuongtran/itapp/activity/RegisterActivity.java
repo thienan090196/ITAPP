@@ -33,28 +33,11 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        edtName = (EditText) findViewById(R.id.name);
-
-        edtBirthday = (EditText) findViewById(R.id.birthday);
 
         edtEmail = (EditText) findViewById(R.id.email);
 
         edtPassword = (EditText) findViewById(R.id.password);
 
-        spnJob = (Spinner) findViewById(R.id.jobs_spiner);
-        spnJob.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
-                spnJob.getSelectedItem().toString();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-                //Nothing
-            }
-        });
-
-        spnCity = (Spinner) findViewById(R.id.cities_spiner);
         spnCity.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
@@ -68,22 +51,6 @@ public class RegisterActivity extends AppCompatActivity {
         });
     }
 
-    //Gender
-    public void onRadioButtonClicked(View view) {
-        boolean checked = ((RadioButton) view).isChecked();
-        switch (view.getId()) {
-            case R.id.radio_male :
-                if (checked) {
-                    gender = ((RadioButton) view).getText().toString();
-                }
-                break;
-            case R.id.radio_female :
-                if (checked) {
-                    gender = ((RadioButton) view).getText().toString();
-                }
-                break;
-        }
-    }
 
     //Birthday
     public void showDatePickerDialog(View view) {
