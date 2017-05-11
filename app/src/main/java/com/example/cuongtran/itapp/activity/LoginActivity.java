@@ -40,6 +40,8 @@ public class LoginActivity extends BaseActivity {
     private static final String url_login = Common.API_SERVER_IP + "api/login" ;
     private static final String KEY_USER_EMAIL = "email";
     private static final String KEY_USER_PASSWORD = "password";
+    private static final String EMAIL = "email";
+    private static final String PASSWORD = "password";
 
     private EditText edtEmail;
     private EditText edtPassword;
@@ -53,6 +55,10 @@ public class LoginActivity extends BaseActivity {
 
         edtEmail = (EditText) findViewById(R.id.email);
         edtPassword = (EditText) findViewById(R.id.password);
+
+        Intent fromRegister = getIntent();
+        edtEmail.setText(fromRegister.getStringExtra(EMAIL));
+        edtPassword.setText(fromRegister.getStringExtra(PASSWORD));
 
         btnLogin = (Button) findViewById(R.id.btnLogin);
         btnLinkToRegister = (Button) findViewById(R.id.btnLinkToRegisterScreen);
@@ -68,8 +74,8 @@ public class LoginActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 //Move to another activity
-                //Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(getApplicationContext(), RegisterActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -97,7 +103,7 @@ public class LoginActivity extends BaseActivity {
                             //Get api message content
                             //String message = response.getString("message");
                             JSONObject jsonObject = new JSONObject(response);
-
+                            //int status = jsonObject.getInt("status");
                             JSONObject dataObject = jsonObject.getJSONObject("dataObject");
                             String email = dataObject.getString("email");
                             String password = dataObject.getString("password");
